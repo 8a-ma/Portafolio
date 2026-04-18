@@ -4,6 +4,7 @@ export interface Project {
     description: string
     tags: string[]
     path: string
+    thumbnailUrl: string
     created_at: Date
     ended_at: Date | null
 }

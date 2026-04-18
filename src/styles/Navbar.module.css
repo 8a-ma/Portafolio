@@ -1,0 +1,57 @@
+/* Hamburger: top-left fijo */
+.hamburger {
+  position: fixed;
+  top: 22px;
+  left: 22px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+/* Cada línea horizontal del hamburger */
+.line {
+  display: block;
+}
+
+/* Panel oculto por defecto */
+.panel {
+  position: fixed;
+  top: 76px;
+  left: 22px;
+  display: none;
+  flex-direction: column;
+  z-index: 150;
+}
+
+/* Panel visible cuando está abierto */
+.panelOpen {
+  display: flex;
+}
+
+/* Contenedor de cada ítem: círculo + banner */
+.node {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Círculo que contiene el icono */
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Banner con el label — oculto hasta hover */
+.banner {
+  display: none;
+}
+
+.node:hover .banner {
+  display: flex;
+  align-items: center;
+}
